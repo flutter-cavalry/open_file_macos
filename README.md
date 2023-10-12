@@ -1,5 +1,7 @@
 # open_file_macos
 
+[![pub package](https://img.shields.io/pub/v/open_file_macos.svg)](https://pub.dev/packages/open_file_macos)
+
 A flutter plugin for macOS to open files or view files in Finder.
 
 ## Usage
