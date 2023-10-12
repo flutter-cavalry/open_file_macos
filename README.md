@@ -1,6 +1,6 @@
 # open_file_macos
 
-Flutter plugin for macOS to open files or view files in Finder.
+A flutter plugin for macOS to open files or view files in Finder.
 
 ## Usage
 
