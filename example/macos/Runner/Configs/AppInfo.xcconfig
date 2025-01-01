@@ -11,4 +11,4 @@ PRODUCT_NAME = open_file_macos_example
 PRODUCT_BUNDLE_IDENTIFIER = com.flutter-cavalry.openFileMacosExample
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2023 com.flutter-cavalry. All rights reserved.
+PRODUCT_COPYRIGHT = Copyright © 2025 com.flutter-cavalry. All rights reserved.
