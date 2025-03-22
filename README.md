@@ -15,3 +15,15 @@ await _openFileMacosPlugin.open('path/to/a/file');
 // Open a file in Finder.
 await _openFileMacosPlugin.open('path/to/a/file', viewInFinder: true);
 ```
+
+## Windows Support?
+
+As the package name suggests, this package only focuses on a clean implementation on macOS. 
+
+To open files on other platforms, you can find plenty of alternatives on pub.dev.
+
+To view files in explorer on Windows:
+
+```dart
+await Process.run('explorer.exe', ['/select,', file])
+```
