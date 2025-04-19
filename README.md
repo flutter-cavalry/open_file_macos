@@ -25,5 +25,5 @@ To open files on other platforms, you can find plenty of alternatives on pub.dev
 To view files in explorer on Windows:
 
 ```dart
-await Process.run('explorer.exe', ['/select,', file])
+await Process.run('explorer.exe', ['/select,$path']);
 ```
