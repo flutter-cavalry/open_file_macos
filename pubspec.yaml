@@ -1,6 +1,6 @@
 name: open_file_macos
 description: A flutter plugin for macOS to open files or view files in Finder.
-version: 0.1.0
+version: 0.2.0
 homepage: https://github.com/flutter-cavalry/open_file_macos
 
 environment:
@@ -15,7 +15,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
