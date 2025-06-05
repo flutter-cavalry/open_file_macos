@@ -20,7 +20,19 @@ public class OpenFileMacosPlugin: NSObject, FlutterPlugin {
       // Arguments are enforced on dart side.
       let file = args["file"] as! String
       let viewInFinder = args["viewInFinder"] as? Bool ?? false
-      let url = URL(fileURLWithPath: file)
+      let isFileURL = args["isFileURL"] as? Bool ?? false
+      
+      var url: URL?
+      if isFileURL {
+        url = URL(string: file)
+      } else {
+        url = URL(fileURLWithPath: file)
+      }
+      
+      guard let url = url else {
+        result(FlutterError(code: "InvalidFileURL", message: "Invalid file URL", details: nil))
+        return
+      }
 
       if viewInFinder {
         NSWorkspace.shared.activateFileViewerSelecting([url])

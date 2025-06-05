@@ -23,7 +23,7 @@ abstract class OpenFileMacosPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<void> open(String file, {bool? viewInFinder}) async {
+  Future<void> open(String file, {bool? viewInFinder, bool? isFileURL}) async {
     throw UnimplementedError('open() has not been implemented.');
   }
 }

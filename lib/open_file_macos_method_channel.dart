@@ -10,10 +10,11 @@ class MethodChannelOpenFileMacos extends OpenFileMacosPlatform {
   final methodChannel = const MethodChannel('open_file_macos');
 
   @override
-  Future<void> open(String file, {bool? viewInFinder}) async {
+  Future<void> open(String file, {bool? viewInFinder, bool? isFileURL}) async {
     await methodChannel.invokeMethod<void>('open', <String, dynamic>{
       'file': file,
       'viewInFinder': viewInFinder,
+      'isFileURL': isFileURL,
     });
   }
 }

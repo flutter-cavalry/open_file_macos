@@ -12,8 +12,10 @@ import 'package:open_file_macos/open_file_macos.dart';
 final _openFileMacosPlugin = OpenFileMacos();
 // Open a file.
 await _openFileMacosPlugin.open('path/to/a/file');
-// Open a file in Finder.
+// Show a path in Finder.
 await _openFileMacosPlugin.open('path/to/a/file', viewInFinder: true);
+// Path can be a file URL.
+await _openFileMacosPlugin.open('file:///path/to/a/file', isFileURL: true);
 ```
 
 ## Windows Support?
