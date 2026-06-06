@@ -6,16 +6,20 @@ import PackageDescription
 let package = Package(
     name: "open_file_macos",
     platforms: [
-        .macOS("10.14")
+        .macOS("10.15")
     ],
     products: [
         .library(name: "open-file-macos", targets: ["open_file_macos"])
     ],
-    dependencies: [],
+    dependencies: [
+        .package(name: "FlutterFramework", path: "../FlutterFramework")
+    ],
     targets: [
         .target(
             name: "open_file_macos",
-            dependencies: [],
+            dependencies: [
+                .product(name: "FlutterFramework", package: "FlutterFramework")
+            ],
             resources: [
                 // If your plugin requires a privacy manifest, for example if it collects user
                 // data, update the PrivacyInfo.xcprivacy file to describe your plugin's
