@@ -1,3 +1,7 @@
+## 1.0.0
+
+- No changes, just a major version bump to indicate that the API is stable.
+
 ## 0.2.0
 
 - Allow file URLs.
